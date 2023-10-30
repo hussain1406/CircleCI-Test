@@ -1,0 +1,14 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+    - image: alpine:3.5
+      auth:
+        username: hussain14
+        password: somepasswordhere
+    steps:
+    - run:
+        name: The first Step
+        command: |
+          echo "Hello World"
+          echo "This is delivery platform"
